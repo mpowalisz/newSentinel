@@ -1,0 +1,15 @@
+header {
+    background: lightblue;
+}
+
+body {
+    background:grey;
+}
+
+.navbar-fixed {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
