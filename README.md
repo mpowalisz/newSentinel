@@ -2,10 +2,11 @@
 This app uses a scraping method to compile Orlando Sentinel articles and allows the user to comment.
 
 ##Technologies Used
-Materialize
-MongoDB
-Axios NPM
-Heroku mLab
+  * Materialize - http://materializecss.com/
+  * MongoDB - https://www.mongodb.com/
+  * Mongoose - http://mongoosejs.com/
+  * Axios NPM - https://www.npmjs.com/package/axios
+  * Heroku mLab - https://mlab.com/
 
 ##Author
 Mark Powalisz
