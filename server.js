@@ -39,7 +39,6 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
-    // useMongoClient: true
 });
 
 // Routes
@@ -82,8 +81,15 @@ app.get("/scrape", function (req, res) {
 });
 
 app.get("/", function (req, res) {
-    res.render("index");
-  });
+    db.Article.find()
+        .then(function (dbArticle) {
+            res.render("index", { articles: dbArticle });
+        })
+        .catch(function (err) {
+            res.json(err);
+        })
+
+});
 
 // Route for getting all Articles from the db
 app.get("/articles", function (req, res) {

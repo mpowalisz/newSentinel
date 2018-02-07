@@ -1,5 +1,16 @@
 <main class='container'>
-This is the body of the beast.
 
+    <div id='articles'>
+        {{#each articles}}
+        <p class="articles">{{title}}
+            <br>{{link}}</p>
+        {{/each}}
+    </div>
+    
+    <div id='notes'>
+        {{#each notes}}
+        <p class="notes">{{note}}</p>
+        {{/each}}
+    </div>
 
 </main>
