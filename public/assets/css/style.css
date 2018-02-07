@@ -6,8 +6,18 @@
     margin-left: 50px;
 }
 
+#scrape {
+    float: right;
+    margin-right: 20px;
+}
+
 body {
     background:grey;
+}
+
+#notes {
+    background: white;
+    margin-top: 10px;
 }
 
 .navbar-fixed {
