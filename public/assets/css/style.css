@@ -1,5 +1,9 @@
-header {
-    background: lightblue;
+.nav-wrapper{
+    background: royalblue;
+}
+
+.brand-logo {
+    margin-left: 50px;
 }
 
 body {
