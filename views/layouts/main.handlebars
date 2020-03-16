@@ -2,42 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>newSentinel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Mark Powalisz" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Handlebars, MongoDB" />
+  <title>newSentinel</title>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="/assets/css/materialize.min.css"> {{!-- jQuery --}}
-    <script src="/assets/js/jquery.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="/assets/css/materialize.min.css"> {{!-- jQuery --}}
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="/assets/js/materialize.min.js"></script> {{!-- Style.css --}}
-    <link rel="stylesheet" href="/assets/css/style.css">
+  {{!-- Style.css --}}
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">New Sentinel</a>
-                <a href="/scrape" id="scrape">Scrape New Articles</a>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">New Sentinel</a>
+        <a href="/scrape" id="scrape">Scrape New Articles</a>
+      </div>
+    </nav>
+  </header>
 
+  <div class="container">
     {{{body}}}
+  </div>
 
-    <script type="text/javascript">
-        // On Click for Articles
-        $(document).on("click", ".articles", function (event) {
-            console.log("This link should allow the user to make notes");
-        })
-    </script>
+  <footer class="footer text-center">
+    <div class="container">
+      <span>Published by Mark Powalisz</span>
+    </div>
+  </footer>
 
-    <footer>
-        © 2018 Copyright Mark Powalisz
-    </footer>
+  {{!-- Downloaded jQuery --}}
+  <script src="/assets/js/jquery.js"></script>
+
+  <script type="text/javascript">
+    $(document).on("click", ".articles", function (event) {
+      console.log("This link should allow the user to make notes");
+    });
+  </script>
+  <!-- Materialize Prerequisites -->
+  <script src="/assets/js/materialize.min.js"></script>
 </body>
 
 </html>
